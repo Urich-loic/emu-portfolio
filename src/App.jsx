@@ -1,19 +1,17 @@
-import { useState } from "react";
-import "./App.css";
 import { Outlet } from "react-router-dom";
-import Header from "./component/common/Header";
-import Footer from "./component/common/Footer";
+import Header from "./components/common/Header";
+import Footer from "./components/common/Footer";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <Header />
-      <main>
-        <Outlet />
-      </main>
-      <Footer />
+      <div className="bg-dark text-forground  min-h-screen">
+        <Header />
+        <main>
+          <Outlet />
+        </main>
+        <Footer />
+      </div>
     </>
   );
 }
