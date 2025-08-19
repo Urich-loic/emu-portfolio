@@ -9,17 +9,17 @@ import { Link, NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
-    <div>
-      <NavigationMenu className="flex items-center justify-between bg-background p-4">
+    <div className="fixed t-0 w-screen z-50">
+      <NavigationMenu className="flex items-center justify-between p-4 bg-dark text-white">
         <NavigationMenuList>
           <NavigationMenuItem>
             <NavigationMenuLink asChild>
-              <NavLink to={"/"}>EMU-Portfolio</NavLink>
+              <NavLink to={"/"}>Engama</NavLink>
             </NavigationMenuLink>
           </NavigationMenuItem>
         </NavigationMenuList>
 
-        <NavigationMenuList className="flex items-center space-x-4">
+        <NavigationMenuList className="flex items-center space-x-4 bg-gray-50/10 text-white px-4 py-3 rounded-2xl">
           <NavigationMenuItem>
             <NavigationMenuLink asChild>
               <NavLink to={"/"}>Home</NavLink>
@@ -43,13 +43,10 @@ export default function Header() {
               <NavLink to={"/Blog"}>Blog</NavLink>
             </NavigationMenuLink>
           </NavigationMenuItem>
-
-          
-
         </NavigationMenuList>
 
-         <NavigationMenuList>
-         <NavigationMenuItem>
+        <NavigationMenuList>
+          <NavigationMenuItem>
             <NavigationMenuLink asChild>
               <NavLink to={"/contact"}>Contact</NavLink>
             </NavigationMenuLink>
