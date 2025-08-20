@@ -1,7 +1,22 @@
-.bg-image{
+/* .bg-image{
     background:url("./images/Background1.png");
-    position:center;
-    size:cover;
-    repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
     min-height:580px;
+} */
+
+.list_bgImage__Kn8OJ {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    filter: hue-rotate(50deg);
+    opacity: .15;
+    overflow: hidden;
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
 }
