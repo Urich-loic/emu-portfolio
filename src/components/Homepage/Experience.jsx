@@ -49,7 +49,7 @@ export default function Experience() {
               Skills
             </div>
 
-            <div className="skillContainer xl:w-[100%] grid xl:grid-cols-2 sm:grid-cols-1 gap-5 pt-10">
+            <div className="skillContainer xl:w-[100%] grid xl:grid-cols-2 sm:grid-cols-1 gap-5 pt-3">
               <div className="skillItem border-2 border-zinc-700 p-5 rounded-lg">
                 <h3 className="text-2xl">Web Development</h3>
                 <p className="pt-3 text-gray-400">
