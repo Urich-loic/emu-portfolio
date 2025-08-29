@@ -6,7 +6,7 @@ import { Switch } from "@/components/ui/switch";
 export default function ProjectCard() {
   return (
     <div
-      className={`projectCard w-[48%] rounded-2xl  overflow-hidden space-x-10 `}
+      className={`projectCard w-[48%] transition-all rounded-2xl  overflow-hidden space-x-10 `}
     >
       <div className={`projectImage w-[100%]`}>
         <img src={Background1} alt="" />

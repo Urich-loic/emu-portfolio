@@ -21,6 +21,22 @@
     align-items: center;
 }
 
+.skillCard{
+    position: relative;
+    transition: all 0.9s ease-in-out;
+}
+
+.skillCard:hover::before{
+    content: '';
+    position: absolute;
+    top: -15px;
+    bottom: -15px;
+    left: -15px;
+    right: -15px;
+    border-radius: 10px;
+    background-color: oklch(1 0 0 / 10%);
+}
+
 .experienceWrapper{
     max-width: 66vw;
     width: 100%;
@@ -33,6 +49,21 @@
 
 .blog_display_type > div {
     transform: scale(1.5);
+}
+
+@media only screen and (max-width:950px){
+    .blog_display_type{
+    display: none;
+}
+.projectCard {
+    display: block !important;
+}
+
+.projectImage {
+    width: 100%;
+}
+
+
 }
 
 @media only screen and (max-width:650px){
@@ -50,9 +81,7 @@
     padding:50px !important;
 }
 
-.blog_display_type{
-    display: none;
-}
+
 
 .projectCard {
     display: block !important;

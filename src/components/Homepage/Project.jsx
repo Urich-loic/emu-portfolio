@@ -10,7 +10,7 @@ import ProjectList from "../ProjectList";
 export default function Project() {
   const [status, setStatus] = useState(false);
   return (
-    <div id="project" className="experience bg-background text-white xl:py-27 lg:py-27 md:py-27 sm:py-18 px-3">
+    <div id="project" className="padding_class experience bg-background text-white xl:py-27 lg:py-27 md:py-27 sm:py-18 px-3">
       <div className="experienceWrapper flex sm:flex-xol space-x-3  flex-col">
         <div className="flex flex-col text-center pb-10 ">
           <div className="title pt-7">

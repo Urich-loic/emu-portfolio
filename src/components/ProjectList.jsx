@@ -7,16 +7,16 @@ import { Switch } from "@/components/ui/switch";
 export default function ProjectList() {
   return (
     <div
-      className={`projectCard w-[100%] flex border-b-1 border-b-zinc-700 pb-10 overflow-hidden space-x-10`}
+      className={`projectCard w-[100%] flex border-b-1 transition-all border-b-zinc-700 pb-10 overflow-hidden space-x-10`}
     >
       <div
-        className={`projectImage w-[55%] rounded-2xl overflow-hidden`}
+        className={`projectImage w-[55%] transition-all rounded-2xl overflow-hidden`}
       >
         <img src={Background1} alt="" />
       </div>
       <div className="textContainer">
         <div
-          className={`projectTitle text-left w-[100%] block pt-5`}
+          className={`projectTitle text-left w-[100%] transition-all block pt-5`}
         >
           <Badge variant="secondary" className="bg-gray-50/10 text-white">
             Category

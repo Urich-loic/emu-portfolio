@@ -1,12 +1,22 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import {
+  Table,
+  TableBody,
+  TableCaption,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+import Background1 from "../../../public/images/Background1.png";
 
 export default function Experience() {
   return (
-    <div className="about experience bg-[#191e29] text-white xl:py-27 lg:py-27 md:py-27 sm:py-18 xs:py-18 px-3">
+    <div className="about experience text-white xl:py-27 lg:py-27 md:py-27 sm:py-18 xs:py-18 px-3">
       <div className="experienceWrapper flex sm:flex-xol space-x-3  flex-col">
-        <div className="padding_class flex xl:flex-row lg:flex-row md:flex-row sm:flex-col border-b-2 border-b-zinc-700 pb-10 space-x-5">
+        <div className="padding_class flex xl:flex-row lg:flex-row md:flex-col sm:flex-col border-b-1 border-b-zinc-700 pb-10 space-x-5">
           <div className="title">
             <span>My Resume</span>
             <h2 className="xl:text-5xl py-7 lg:text-3xl md:text-3xl sm:text-3xl text-3xl">
@@ -29,74 +39,180 @@ export default function Experience() {
             </p>
           </div>
         </div>
-        <div className="padding_class profileDetail flex xl:flex-row lg:flex-row md:flex-row sm:flex-col xs:flex-col gap-10 pt-18">
-          <div className="tabs flex xl:flex-col lg:flex-col md:flex-col sm:flex-col xl:w-[15%] lg:w-[15%] md:w-[15%] xs:w-[100%] space-y-2">
-            <Button variant="outline" className="px-3 text-black ">
-              Skills
-            </Button>
+        <div className="padding_class profileDetail flex xl:flex-row lg:flex-row md:flex-col sm:flex-col xs:flex-col gap-10 pt-18">
+          <div className="flex justify-between w-[100%] xl:space-x-27 lg:space-x-27 md:space-x-18">
+            <div className="xl:w-[50%] lg:w-[50%] md:w-[100%] sm:w-[100%] text-gray-500   heading grid-cols-2 space-x-1">
+              <h2 className="text-2xl">Skills</h2>
+              <div className="skillWrapper pt-6 space-y-7">
+                <div className="skillCard rounded-2xl transition-all">
+                  <h3 className="text-white">Skill title</h3>
+                  <p className="skillDescription text-sm">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Architecto assumenda dignissimos debitis odit corporis
+                    quisquam vero deleniti consectetur numquam ducimus,
+                    praesentium autem a et ipsam repellendus commodi non
+                    doloribus quas?
+                  </p>
+                </div>
 
-            <Button variant="outline" className="px-3 text-black">
-              Experience
-            </Button>
+                <div className="skillCard rounded-2xl transition-all">
+                  <h3 className="text-white">Skill title</h3>
+                  <p className="skillDescription text-sm">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Architecto assumenda dignissimos debitis odit corporis
+                    quisquam vero deleniti consectetur numquam ducimus,
+                    praesentium autem a et ipsam repellendus commodi non
+                    doloribus quas?
+                  </p>
+                </div>
 
-            <Button variant="outline" className="px-3 text-black">
-              Edication
-            </Button>
-          </div>
-          <div className="tabs col-span-2 xl:w-[75%] lg:w-[75%] md:w-[75%] sm:w-[100%] space-y-3">
-            <div className="heading grid-cols-2 space-x-1 xl:w-[100%]">
-              Skills
+                <div className="skillCard rounded-2xl transition-all">
+                  <h3 className="text-white">Skill title</h3>
+                  <p className="skillDescription text-sm">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Architecto assumenda dignissimos debitis odit corporis
+                    quisquam vero deleniti consectetur numquam ducimus,
+                    praesentium autem a et ipsam repellendus commodi non
+                    doloribus quas?
+                  </p>
+                </div>
+
+                <div className="skillCard rounded-2xl transition-all">
+                  <h3 className="text-white">Skill title</h3>
+                  <p className="skillDescription text-sm">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Architecto assumenda dignissimos debitis odit corporis
+                    quisquam vero deleniti consectetur numquam ducimus,
+                    praesentium autem a et ipsam repellendus commodi non
+                    doloribus quas?
+                  </p>
+                </div>
+              </div>
             </div>
+            <div className="JourneyClass xl:w-[50%] lg:w-[50%] md:w-[100%] sm:w-[100%]">
+              <div className="journeyWrapper border-1 border-zinc-700 rounded-2xl p-6">
+                <h2 className="pb-7 text-2xl text-gray-500 ">Journey</h2>
+                <div class="group relative flex flex-col items-start">
+                  <Table className={"text-gray-500"}>
+                    <TableBody className={"space-y-4"}>
+                      <TableRow className="hover:bg-transparent border-none dark:bg-hover:bg-transparent cursor-pointer space-x-2 flex justify-start items-center">
+                        <TableCell className="p-0 h-[50px] w-[50px] flex justify-center items-center">
+                          <span className="border-1 border-zinc-700 rounded-full h-[100%] w-[100%] p-2">
+                            <img
+                              src={Background1}
+                              alt=""
+                              className="rounded-full object-cover w-[100%] h-[100%]"
+                            />
+                          </span>
+                        </TableCell>
+                        <TableCell className={" w-[210px]"}>
+                          <p className="text-white">Company name</p>
+                          <span>role</span>
+                        </TableCell>
 
-            <div className="skillContainer xl:w-[100%] grid xl:grid-cols-2 sm:grid-cols-1 gap-5 pt-3">
-              <div className="skillItem border-1 border-zinc-700 p-5 rounded-lg">
-                <h3 className="text-2xl">Web Development</h3>
-                <p className="pt-3 text-gray-400">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Eveniet, ducimus error. Temporibus maxime veritatis, ab nemo
-                  quod provident delectus, tempore explicabo ducimus iure
-                  commodi, itaque aliquid. Nisi voluptatem natus corporis.
-                </p>
-              </div>
+                        <TableCell className="text-right">
+                          23/03/2025 - present
+                        </TableCell>
+                      </TableRow>
 
-              <div className="skillItem border-1 border-zinc-700 p-5 rounded-lg">
-                <h3 className="text-2xl">Web Development</h3>
-                <p className="pt-3 text-gray-400">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Eveniet, ducimus error. Temporibus maxime veritatis, ab nemo
-                  quod provident delectus, tempore explicabo ducimus iure
-                  commodi, itaque aliquid. Nisi voluptatem natus corporis.
-                </p>
-              </div>
+                      <TableRow className="hover:bg-transparent border-none dark:bg-hover:bg-transparent cursor-pointer space-x-2 flex justify-start items-center">
+                        <TableCell className="p-0 h-[50px] w-[50px] flex justify-center items-center">
+                          <span className="border-1 border-zinc-700 rounded-full h-[100%] w-[100%] p-2">
+                            <img
+                              src={Background1}
+                              alt=""
+                              className="rounded-full object-cover w-[100%] h-[100%]"
+                            />
+                          </span>
+                        </TableCell>
+                        <TableCell className={" w-[210px]"}>
+                          <p className="text-white">Company name</p>
+                          <span>role</span>
+                        </TableCell>
 
-              <div className="skillItem border-1 border-zinc-700 p-5 rounded-lg">
-                <h3 className="text-2xl">Web Development</h3>
-                <p className="pt-3 text-gray-400">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Eveniet, ducimus error. Temporibus maxime veritatis, ab nemo
-                  quod provident delectus, tempore explicabo ducimus iure
-                  commodi, itaque aliquid. Nisi voluptatem natus corporis.
-                </p>
-              </div>
+                        <TableCell className="text-right">
+                          23/03/2025 - present
+                        </TableCell>
+                      </TableRow>
 
-              <div className="skillItem border-1 border-zinc-700 p-5 rounded-lg">
-                <h3 className="text-2xl">Web Development</h3>
-                <p className="pt-3 text-gray-400">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Eveniet, ducimus error. Temporibus maxime veritatis, ab nemo
-                  quod provident delectus, tempore explicabo ducimus iure
-                  commodi, itaque aliquid. Nisi voluptatem natus corporis.
-                </p>
-              </div>
+                      <TableRow className="hover:bg-transparent border-none dark:bg-hover:bg-transparent cursor-pointer space-x-2 flex justify-start items-center">
+                        <TableCell className="p-0 h-[50px] w-[50px] flex justify-center items-center">
+                          <span className="border-1 border-zinc-700 rounded-full h-[100%] w-[100%] p-2">
+                            <img
+                              src={Background1}
+                              alt=""
+                              className="rounded-full object-cover w-[100%] h-[100%]"
+                            />
+                          </span>
+                        </TableCell>
+                        <TableCell className={" w-[210px]"}>
+                          <p className="text-white">Company name</p>
+                          <span>role</span>
+                        </TableCell>
 
-              <div className="skillItem border-1 border-zinc-700 p-5 rounded-lg">
-                <h3 className="text-2xl">Web Development</h3>
-                <p className="pt-3 text-gray-400">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Eveniet, ducimus error. Temporibus maxime veritatis, ab nemo
-                  quod provident delectus, tempore explicabo ducimus iure
-                  commodi, itaque aliquid. Nisi voluptatem natus corporis.
-                </p>
+                        <TableCell className="text-right">
+                          23/03/2025 - present
+                        </TableCell>
+                      </TableRow>
+
+                      <TableRow className="hover:bg-transparent border-none dark:bg-hover:bg-transparent cursor-pointer space-x-2 flex justify-start items-center">
+                        <TableCell className="p-0 h-[50px] w-[50px] flex justify-center items-center">
+                          <span className="border-1 border-zinc-700 rounded-full h-[100%] w-[100%] p-2">
+                            <img
+                              src={Background1}
+                              alt=""
+                              className="rounded-full object-cover w-[100%] h-[100%]"
+                            />
+                          </span>
+                        </TableCell>
+                        <TableCell className={" w-[210px]"}>
+                          <p className="text-white">Company name</p>
+                          <span>role</span>
+                        </TableCell>
+
+                        <TableCell className="text-right">
+                          23/03/2025 - present
+                        </TableCell>
+                      </TableRow>
+
+                      <TableRow className="hover:bg-transparent border-none dark:bg-hover:bg-transparent cursor-pointer space-x-2 flex justify-start items-center">
+                        <TableCell className="p-0 h-[50px] w-[50px] flex justify-center items-center">
+                          <span className="border-1 border-zinc-700 rounded-full h-[100%] w-[100%] p-2">
+                            <img
+                              src={Background1}
+                              alt=""
+                              className="rounded-full object-cover w-[100%] h-[100%]"
+                            />
+                          </span>
+                        </TableCell>
+                        <TableCell className={" w-[210px]"}>
+                          <p className="text-white">Company name</p>
+                          <span>role</span>
+                        </TableCell>
+
+                        <TableCell className="text-right">
+                          23/03/2025 - present
+                        </TableCell>
+                      </TableRow>
+
+                      <TableRow className="hover:bg-transparent border-none dark:bg-hover:bg-transparent cursor-pointer space-x-2 flex justify-start items-center">
+                        <TableCell className="w-[100%]">
+                          <Button
+                            variant="outline"
+                            className="w-[100%] bg-zinc-800 border-none hover:text-black"
+                          >
+                            <Link
+                              to="#resumePDF"
+                              className="text-black text-white hover:text-black"
+                            >
+                              Download my CV
+                            </Link>
+                          </Button>
+                        </TableCell>
+                      </TableRow>
+                    </TableBody>
+                  </Table>
+                </div>
               </div>
             </div>
           </div>
