@@ -11,4 +11,11 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  theme: {
+    extend: {
+      screens: {
+        xs: "480px", // 👈 extra small breakpoint
+      },
+    },
+  },
 });
