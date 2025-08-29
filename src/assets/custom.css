@@ -27,6 +27,10 @@
     margin: 0 auto;
 }
 
+.projectCard:nth-child(even){
+    margin-top: 30px;
+}
+
 @media only screen and (max-width:650px){
     .profileDetail {
     display: block !important;
