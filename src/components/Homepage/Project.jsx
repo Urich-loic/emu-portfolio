@@ -1,20 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import Background1 from "../../../public/images/Background1.png";
 import { Badge } from "@/components/ui/badge";
+import { Switch } from "@/components/ui/switch";
+import ProjectCard from "../ProjectCard";
+import ProjectList from "../ProjectList";
 
 export default function Project() {
+  const [status, setStatus] = useState(false);
   return (
-    <div className="experience bg-background text-white xl:py-27 lg:py-27 md:py-27 sm:py-18 px-3">
+    <div id="project" className="experience bg-background text-white xl:py-27 lg:py-27 md:py-27 sm:py-18 px-3">
       <div className="experienceWrapper flex sm:flex-xol space-x-3  flex-col">
-        <div className="flex flex-col text-center border-b-2 border-b-zinc-700 pb-10 ">
+        <div className="flex flex-col text-center pb-10 ">
           <div className="title pt-7">
-             <Badge variant="secondary" className="bg-gray-50/10 text-white">
-                    Achievement
-                  </Badge>
+            <Badge variant="secondary" className="bg-gray-50/10 text-white">
+              Achievement
+            </Badge>
             <h2 className="xl:text-5xl lg:text-3xl md:text-3xl sm:text-3xl text-3xl">
-              All over my Personal details find here
+              Accomplished projects
             </h2>
           </div>
           <div className="description pt-5">
@@ -25,50 +29,19 @@ export default function Project() {
               Nisi voluptatem natus corporis.
             </p>
           </div>
-          <div className="blog_display_type">
-            <span className="Icons_list"></span>
-            <span className="Icons_grid"></span>
+          <div className="blog_display_type flex justify-center xl:pt-27 lg:pt-27 md:pt-27 sm:pt-18">
+            <div className="flex items-center space-x-5">
+              <Switch
+                id="airplane-mode"               checked={status}
+                onCheckedChange={() => setStatus(!status)}
+              />
+              <label htmlFor="airplane-mode">Display Mode</label>
+            </div>
           </div>
           <div className="projectWrapper xl:py-27 lg:py-27 md:py-27 sm:py-18 padding_class">
-            <div className="projectInnerWrapper flex space-x-5 space-y-5">
-              <div className="projectCard rounded-2xl overflow-hidden">
-                <div className="projectImage">
-                  <img src={Background1} alt="" />
-                </div>
-                <div className="projectTitle text-left pt-5">
-                  <Badge variant="secondary" className="bg-gray-50/10 text-white">
-                    Category
-                  </Badge>
-                  <h3 className="text-left text-2xl py-3">Project one</h3>
-                </div>
-                <div className="projectDescription text-left">
-                  <p className=" text-gray-400">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Odit adipisci voluptates tempore fugit sunt velit expedita
-                    quia voluptatum eaque commodi delectus perspiciatis
-                    excepturi, harum reprehenderit doloremque pariatur explicabo
-                    distinctio corporis.
-                  </p>
-                </div>
-              </div>
-              <div className="projectCard rounded-2xl overflow-hidden">
-                <div className="projectImage">
-                  <img src={Background1} alt="" />
-                </div>
-                <div className="projectTitle text-left pt-5">
-                  <Badge variant="secondary" className="bg-gray-50/10 text-white">Category</Badge>
-                  <h3 className="text-left text-2xl py-3">Project one</h3>
-                </div>
-                <div className="projectDescription ">
-                  <p className=" text-gray-400 text-left">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Odit adipisci voluptates tempore fugit sunt velit expedita
-                    quia voluptatum eaque commodi delectus perspiciatis
-                    excepturi, harum reprehenderit doloremque pariatur explicabo
-                    distinctio corporis.
-                  </p>
-                </div>
-              </div>
+            <div className="projectInnerWrapper xl:flex xl:flex-wrap lg:flex-wrap md:flex-wrap lg:flex md:flex sm:block space-x-5 space-y-5">
+            {status? <ProjectCard/>:<ProjectList/>
+             }
             </div>
           </div>
         </div>

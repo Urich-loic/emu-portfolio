@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { AlertCircleIcon, BadgeCheckIcon, CheckIcon } from "lucide-react";
 export default function HeroSection() {
   return (
-    <div className="bg-image px-3 text-white flex font-medium  h-screen items-center justify-center text-center flex-col xl:pt-37">
+    <div className="bg-image px-3 text-white flex font-medium  h-screen items-center justify-center text-center flex-col h-[100vh]">
       <p className="space-x-2">
         <Badge variant="secondary">Hi there 👋🏾</Badge>
         <Badge variant="secondary">I'm</Badge>

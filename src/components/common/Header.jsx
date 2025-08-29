@@ -6,6 +6,7 @@ import {
 } from "@radix-ui/react-navigation-menu";
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 
 export default function Header() {
   return (
@@ -26,21 +27,21 @@ export default function Header() {
             </NavigationMenuLink>
           </NavigationMenuItem>
 
-          <NavigationMenuItem>
-            <NavigationMenuLink asChild>
-              <NavLink to={"/about"}>About</NavLink>
-            </NavigationMenuLink>
-          </NavigationMenuItem>
+         
+              <ScrollLink className="cursor-pointer" to={"about"} smooth={true} duration={1000} offset={-70}>
+                About
+              </ScrollLink>
+          
+
+          <ScrollLink className="cursor-pointer" to={"project"} smooth={true} duration={1000} offset={-70}>
+            Projects
+          </ScrollLink>
 
           <NavigationMenuItem>
             <NavigationMenuLink asChild>
-              <NavLink to={"/projects"}>Projects</NavLink>
-            </NavigationMenuLink>
-          </NavigationMenuItem>
-
-          <NavigationMenuItem>
-            <NavigationMenuLink asChild>
-              <NavLink to={"/Blog"}>Blog</NavLink>
+              <Link to="target-section" smooth={true} duration={500}>
+                Blog
+              </Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
         </NavigationMenuList>
@@ -48,7 +49,9 @@ export default function Header() {
         <NavigationMenuList>
           <NavigationMenuItem>
             <NavigationMenuLink asChild>
-              <NavLink to={"/contact"}>Contact</NavLink>
+              <Link to="target-section" smooth={true} duration={500}>
+                Contact
+              </Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
         </NavigationMenuList>

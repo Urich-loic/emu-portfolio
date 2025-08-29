@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Experience() {
   return (
-    <div className="experience bg-[#191e29] text-white xl:py-27 lg:py-27 md:py-27 sm:py-18 xs:py-18 px-3">
+    <div className="about experience bg-[#191e29] text-white xl:py-27 lg:py-27 md:py-27 sm:py-18 xs:py-18 px-3">
       <div className="experienceWrapper flex sm:flex-xol space-x-3  flex-col">
         <div className="padding_class flex xl:flex-row lg:flex-row md:flex-row sm:flex-col border-b-2 border-b-zinc-700 pb-10 space-x-5">
           <div className="title">
@@ -29,7 +29,7 @@ export default function Experience() {
             </p>
           </div>
         </div>
-        <div className="padding_class profileDetail flex xl:flex-row lg:flex-row md:flex-row sm:flex-col xs:flex-col gap-10 pt-10">
+        <div className="padding_class profileDetail flex xl:flex-row lg:flex-row md:flex-row sm:flex-col xs:flex-col gap-10 pt-18">
           <div className="tabs flex xl:flex-col lg:flex-col md:flex-col sm:flex-col xl:w-[15%] lg:w-[15%] md:w-[15%] xs:w-[100%] space-y-2">
             <Button variant="outline" className="px-3 text-black ">
               Skills

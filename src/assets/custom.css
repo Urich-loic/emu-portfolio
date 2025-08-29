@@ -22,20 +22,45 @@
 }
 
 .experienceWrapper{
-    max-width: 80vw;
+    max-width: 66vw;
     width: 100%;
     margin: 0 auto;
 }
 
 .projectCard:nth-child(even){
-    margin-top: 30px;
+    margin-top: 40px;
+}
+
+.blog_display_type > div {
+    transform: scale(1.5);
 }
 
 @media only screen and (max-width:650px){
+
+.experienceWrapper{
+    max-width: 86vw;
+    width: 100%;
+    margin: 0 auto;
+}
+
     .profileDetail {
     display: block !important;
 }
 .padding_class{
     padding:50px !important;
 }
+
+.blog_display_type{
+    display: none;
+}
+
+.projectCard {
+    display: block !important;
+}
+
+.projectCard .projectImage {
+    width: 100%;
+}
+
+
 }
