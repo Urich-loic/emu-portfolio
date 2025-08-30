@@ -14,8 +14,8 @@ import Background1 from "../../../public/images/Background1.png";
 
 export default function Experience() {
   return (
-    <div className="about experience text-white xl:py-27 lg:py-27 md:py-27 sm:py-18 xs:py-18 px-3">
-      <div className="experienceWrapper flex sm:flex-xol space-x-3  flex-col">
+    <div className="about experience text-white xl:py-10 lg:py-10 md:py-10 sm:py-10 xs:py-5 px-3">
+      <div className="experienceWrapper flex sm:flex-col space-x-3  flex-col">
         <div className="padding_class flex xl:flex-row lg:flex-row md:flex-col sm:flex-col border-b-1 border-b-zinc-700 pb-10 space-x-5">
           <div className="title">
             <span>My Resume</span>
@@ -31,7 +31,7 @@ export default function Experience() {
               Nisi voluptatem natus corporis.
             </p>
             <p className="pt-7">
-              <Button variant="outline" className="">
+              <Button variant="outline" className="hover:text-black">
                 <Link to="#resumePDF" className="text-black">
                   Download my CV
                 </Link>
@@ -39,9 +39,9 @@ export default function Experience() {
             </p>
           </div>
         </div>
-        <div className="padding_class profileDetail flex xl:flex-row lg:flex-row md:flex-col sm:flex-col xs:flex-col gap-10 pt-18">
-          <div className="flex justify-between w-[100%] xl:space-x-27 lg:space-x-27 md:space-x-18">
-            <div className="xl:w-[50%] lg:w-[50%] md:w-[100%] sm:w-[100%] text-gray-500   heading grid-cols-2 space-x-1">
+        <div className=" profileDetail flex xl:flex-row lg:flex-row md:flex-col sm:flex-col xs:flex-col gap-10">
+          <div className="padding_class xl:pt-18 lg:pt-18 md:pt-18 space-y-10 flex justify-between w-[100%] xl:space-x-27 lg:space-x-27 md:space-x-18 sm:flex-col md:flex-row">
+            <div className="xl:w-[50%] lg:w-[50%] md:w-[100%] sm:w-[100%] text-gray-500  heading grid-cols-2 space-x-1">
               <h2 className="text-2xl">Skills</h2>
               <div className="skillWrapper pt-6 space-y-7">
                 <div className="skillCard rounded-2xl transition-all">
@@ -55,7 +55,7 @@ export default function Experience() {
                   </p>
                 </div>
 
-                <div className="skillCard rounded-2xl transition-all">
+                <div className="skillCard rounded-2xl transition-all space-y-5">
                   <h3 className="text-white">Skill title</h3>
                   <p className="skillDescription text-sm">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -91,8 +91,8 @@ export default function Experience() {
             </div>
             <div className="JourneyClass xl:w-[50%] lg:w-[50%] md:w-[100%] sm:w-[100%]">
               <div className="journeyWrapper border-1 border-zinc-700 rounded-2xl p-6">
-                <h2 className="pb-7 text-2xl text-gray-500 ">Journey</h2>
-                <div class="group relative flex flex-col items-start">
+                <h2 className="pb-7 text-2xl text-gray-500 ">My Journey</h2>
+                <div className="group relative flex flex-col items-start">
                   <Table className={"text-gray-500"}>
                     <TableBody className={"space-y-4"}>
                       <TableRow className="hover:bg-transparent border-none dark:bg-hover:bg-transparent cursor-pointer space-x-2 flex justify-start items-center">
@@ -203,7 +203,7 @@ export default function Experience() {
                           >
                             <Link
                               to="#resumePDF"
-                              className="text-black text-white hover:text-black"
+                              className=" text-white hover:text-black"
                             >
                               Download my CV
                             </Link>

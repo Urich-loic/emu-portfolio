@@ -10,7 +10,10 @@ import ProjectList from "../ProjectList";
 export default function Project() {
   const [status, setStatus] = useState(false);
   return (
-    <div id="project" className="padding_class experience bg-background text-white xl:py-27 lg:py-27 md:py-27 sm:py-18 px-3">
+    <div
+      id="project"
+      className="padding_class experience bg-background text-white xl:py-10 lg:py-10 md:py-10 sm:py-18 px-3"
+    >
       <div className="experienceWrapper flex sm:flex-xol space-x-3  flex-col">
         <div className="flex flex-col text-center pb-10 ">
           <div className="title pt-7">
@@ -32,7 +35,8 @@ export default function Project() {
           <div className="blog_display_type flex justify-center xl:pt-27 lg:pt-27 md:pt-27 sm:pt-18">
             <div className="flex items-center space-x-5">
               <Switch
-                id="airplane-mode"               checked={status}
+                id="airplane-mode"
+                checked={status}
                 onCheckedChange={() => setStatus(!status)}
               />
               <label htmlFor="airplane-mode">Display Mode</label>
@@ -40,8 +44,7 @@ export default function Project() {
           </div>
           <div className="projectWrapper xl:py-27 lg:py-27 md:py-27 sm:py-18 padding_class">
             <div className="projectInnerWrapper xl:flex xl:flex-wrap lg:flex-wrap md:flex-wrap lg:flex md:flex sm:block space-x-5 space-y-5">
-            {status? <ProjectCard/>:<ProjectList/>
-             }
+              {status ? <ProjectCard /> : <ProjectList />}
             </div>
           </div>
         </div>

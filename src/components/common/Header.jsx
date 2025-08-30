@@ -10,7 +10,7 @@ import { Link as ScrollLink } from "react-scroll";
 
 export default function Header() {
   return (
-    <div className="fixed left-[50%] transform  translate-x-[-50%] t-10 w-6xl z-50 mx-auto">
+    <div className="fixed left-[50%] transform  translate-x-[-50%] t-10 xl:w-6xl lg:w-6xl md:w-3xl sm:w-2xl z-50 mx-auto">
       <NavigationMenu className="flex items-center justify-between p-4 bg-dark text-white">
         <NavigationMenuList>
           <NavigationMenuItem>
@@ -28,18 +28,18 @@ export default function Header() {
           </NavigationMenuItem>
 
          
-              <ScrollLink className="cursor-pointer" to={"about"} smooth={true} duration={1000} offset={-70}>
+              <ScrollLink className="cursor-pointer" to={"about"} smooth={"true"} duration={1000} offset={-70}>
                 About
               </ScrollLink>
           
 
-          <ScrollLink className="cursor-pointer" to={"project"} smooth={true} duration={1000} offset={-70}>
+          <ScrollLink className="cursor-pointer" to={"project"} smooth={"true"} duration={1000} offset={-70}>
             Projects
           </ScrollLink>
 
           <NavigationMenuItem>
             <NavigationMenuLink asChild>
-              <Link to="target-section" smooth={true} duration={500}>
+              <Link to="target-section" smooth={"true"} duration={500}>
                 Blog
               </Link>
             </NavigationMenuLink>
@@ -49,7 +49,7 @@ export default function Header() {
         <NavigationMenuList>
           <NavigationMenuItem>
             <NavigationMenuLink asChild>
-              <Link to="target-section" smooth={true} duration={500}>
+              <Link to="target-section" smooth={"true"} duration={500}>
                 Contact
               </Link>
             </NavigationMenuLink>

@@ -8,7 +8,7 @@ export default function HomePage() {
   return (
     <div>
       <HeroSection />
-      <ExpertiseArea />
+      {/* <ExpertiseArea /> */}
       <Experience />
       <Project />
     </div>

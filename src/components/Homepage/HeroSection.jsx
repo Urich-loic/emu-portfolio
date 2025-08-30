@@ -9,7 +9,7 @@ export default function HeroSection() {
         <Badge variant="secondary">I'm</Badge>
         <Badge variant="secondary">Emgama Michel</Badge>
       </p>
-      <h1 className="xl:text-7xl py-7 lg:text-5xl md:text-4xl sm:text-5xl text-5xl">
+      <h1 className="xl:text-7xl py-7 lg:text-5xl md:text-4xl sm:text-5xl text-5xl text-zinc-200">
         FullStack Developer
       </h1>
       <p className="space-x-2">
@@ -25,13 +25,6 @@ export default function HeroSection() {
           className="bg-blue-500 text-white dark:bg-blue-600"
         >
           <CheckIcon />
-          Flutter
-        </Badge>
-        <Badge
-          variant="secondary"
-          className="bg-blue-500 text-white dark:bg-blue-600"
-        >
-          <CheckIcon />
           React js
         </Badge>
         <Badge
@@ -40,6 +33,13 @@ export default function HeroSection() {
         >
           <CheckIcon />
           WordPress
+        </Badge>
+        <Badge
+          variant="secondary"
+          className="bg-blue-500 text-white dark:bg-blue-600"
+        >
+          <CheckIcon />
+          Flutter
         </Badge>
       </p>
       <p className="pt-7 text-zinc-400 weight-100">
