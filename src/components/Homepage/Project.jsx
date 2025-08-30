@@ -25,7 +25,7 @@ export default function Project() {
             </h2>
           </div>
           <div className="description pt-5">
-            <p className="w-3/4 mx-auto text-gray-400">
+            <p className="w-3/4 mx-auto text-gray-400 text-sm">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
               ducimus error. Temporibus maxime veritatis, ab nemo quod provident
               delectus, tempore explicabo ducimus iure commodi, itaque aliquid.

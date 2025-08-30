@@ -22,13 +22,7 @@ export default function ProjectCard() {
       category: "achievement categorie",
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit adipisci voluptates tempore fugit sunt velit expedita quia voluptatum eaque commodi delectus perspiciatis excepturi, harum reprehenderit doloremque pariatur explicabo distinctio corporis.",
-    },
-    {
-      title: "achivemt title",
-      category: "achievement categorie",
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit adipisci voluptates tempore fugit sunt velit expedita quia voluptatum eaque commodi delectus perspiciatis excepturi, harum reprehenderit doloremque pariatur explicabo distinctio corporis.",
-    },
+    }
   ];
 
   return (
@@ -53,7 +47,7 @@ export default function ProjectCard() {
                 status ? "w-[100%]" : "w-[100%] block"
               } text-left`}
             >
-              <p className=" text-gray-400">{posts.description}</p>
+              <p className=" text-gray-400 text-sm">{post.description}</p>
             </div>
           </div>
         </div>

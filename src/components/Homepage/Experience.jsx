@@ -24,7 +24,7 @@ export default function Experience() {
             </h2>
           </div>
           <div className="description pt-10">
-            <p>
+            <p className="text-sm">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
               ducimus error. Temporibus maxime veritatis, ab nemo quod provident
               delectus, tempore explicabo ducimus iure commodi, itaque aliquid.

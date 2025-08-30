@@ -38,11 +38,11 @@ export default function ProjectPage() {
         </div>
         <div className="navLinks flex gap-2 w-[100%] pt-5 text-gray-400">
           <Link to="/projects/side-project" className="text-gray-400">
-            Side project
+            Side projects
           </Link>{" "}
           |
           <NavLink to="/projects" className="text-gray-400">
-            Carrier project
+            Carrier projects
           </NavLink>
         </div>
         <Outlet />

@@ -22,13 +22,7 @@ export default function ProjectCardStyle2() {
       category: "achievement categorie",
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit adipisci voluptates tempore fugit sunt velit expedita quia voluptatum eaque commodi delectus perspiciatis excepturi, harum reprehenderit doloremque pariatur explicabo distinctio corporis.",
-    },
-    {
-      title: "achivemt title",
-      category: "achievement categorie",
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit adipisci voluptates tempore fugit sunt velit expedita quia voluptatum eaque commodi delectus perspiciatis excepturi, harum reprehenderit doloremque pariatur explicabo distinctio corporis.",
-    },
+    }
   ];
   return (
     <>
