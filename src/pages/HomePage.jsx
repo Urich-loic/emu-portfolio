@@ -3,6 +3,7 @@ import HeroSection from "../components/Homepage/HeroSection";
 import ExpertiseArea from "../components/Homepage/ExpertiseArea";
 import Project from "@/components/Homepage/Project";
 import Experience from "@/components/Homepage/Experience";
+import Blog from "@/components/Blog/Blog";
 
 export default function HomePage() {
   return (
@@ -11,6 +12,7 @@ export default function HomePage() {
       {/* <ExpertiseArea /> */}
       <Experience />
       <Project />
+      <Blog/>
     </div>
   );
 }

@@ -18,17 +18,14 @@ export default function Experience() {
       <div className="experienceWrapper flex sm:flex-col space-x-3  flex-col">
         <div className="padding_class flex xl:flex-row lg:flex-row md:flex-col sm:flex-col border-b-1 border-b-zinc-700 pb-10 space-x-5">
           <div className="title">
-            <span>My Resume</span>
+            <span>Professional Resume</span>
             <h2 className="xl:text-5xl py-7 lg:text-3xl md:text-3xl sm:text-3xl text-3xl">
-              All over my Personal details find here
+              Full Stack Developer
             </h2>
           </div>
           <div className="description pt-10">
             <p className="text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
-              ducimus error. Temporibus maxime veritatis, ab nemo quod provident
-              delectus, tempore explicabo ducimus iure commodi, itaque aliquid.
-              Nisi voluptatem natus corporis.
+              Explore my professional background, technical expertise, and career achievements. This resume highlights my skills in React, Laravel, and WordPress, along with key projects and experiences that demonstrate my ability to deliver impactful digital solutions for businesses.
             </p>
             <p className="pt-7">
               <Button variant="outline" className="hover:text-black">

@@ -2,7 +2,7 @@ import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import "./assets/custom.css";
 import "./App.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import { path } from "framer-motion/client";
 import { Home } from "lucide-react";
 import BlogPage from "./pages/BlogPage.jsx";
@@ -11,6 +11,7 @@ import ContactPage from "./pages/ContactPage.jsx";
 import ProjectPage from "./pages/ProjectPage.jsx";
 import SideProject from "./pages/SideProject.jsx";
 import CarrierProject from "./pages/CarrierProject.jsx";
+import Blog from "./components/Blog/Blog.jsx";
 
 const router = createBrowserRouter([
   {
@@ -21,10 +22,6 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <HomePage />,
-      },
-      {
-        path: "/blog",
-        element: <BlogPage />,
       },
       {
         path: "/projects",
@@ -43,6 +40,16 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <ContactPage />,
+      },
+      {
+        path: "/blog",
+        element: <BlogPage />,
+        children: [
+          {
+            path: "/blog",
+            element: <Blog />,
+          },
+        ],
       },
     ],
   },

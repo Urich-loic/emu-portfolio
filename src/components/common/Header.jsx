@@ -27,19 +27,27 @@ export default function Header() {
             </NavigationMenuLink>
           </NavigationMenuItem>
 
-         
-              <ScrollLink className="cursor-pointer" to={"about"} smooth={"true"} duration={1000} offset={-70}>
-                About
-              </ScrollLink>
-          
-
-          <ScrollLink className="cursor-pointer" to={"project"} smooth={"true"} duration={1000} offset={-70}>
-            Projects
+          <ScrollLink
+            className="cursor-pointer"
+            to={"about"}
+            smooth={"true"}
+            duration={1000}
+            offset={-70}
+          >
+            About
           </ScrollLink>
 
           <NavigationMenuItem>
             <NavigationMenuLink asChild>
-              <Link to="target-section" smooth={"true"} duration={500}>
+              <Link to="projects" smooth={"true"} duration={500}>
+                Projects
+              </Link>
+            </NavigationMenuLink>
+          </NavigationMenuItem>
+
+          <NavigationMenuItem>
+            <NavigationMenuLink asChild>
+              <Link to="blog" smooth={"true"} duration={500}>
                 Blog
               </Link>
             </NavigationMenuLink>

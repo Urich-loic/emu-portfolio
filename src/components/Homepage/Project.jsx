@@ -18,18 +18,18 @@ export default function Project() {
         <div className="flex flex-col text-center pb-10 ">
           <div className="title pt-7">
             <Badge variant="secondary" className="bg-gray-50/10 text-white">
-              Achievement
+              Achievements
             </Badge>
             <h2 className="xl:text-5xl lg:text-3xl md:text-3xl sm:text-3xl text-3xl">
-              Accomplished projects
+              Highlighted Projects
             </h2>
           </div>
           <div className="description pt-5">
             <p className="w-3/4 mx-auto text-gray-400 text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
-              ducimus error. Temporibus maxime veritatis, ab nemo quod provident
-              delectus, tempore explicabo ducimus iure commodi, itaque aliquid.
-              Nisi voluptatem natus corporis.
+              A selection of key projects that showcase my ability to design,
+              develop, and deliver impactful digital solutions. Each project
+              reflects my expertise in full-stack development, problem-solving,
+              and creating value for businesses.
             </p>
           </div>
           <div className="blog_display_type flex justify-center xl:pt-27 lg:pt-27 md:pt-27 sm:pt-18">
