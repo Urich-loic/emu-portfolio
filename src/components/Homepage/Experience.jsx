@@ -11,6 +11,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import Background1 from "../../../public/images/Background1.png";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 export default function Experience() {
   return (
@@ -25,7 +26,11 @@ export default function Experience() {
           </div>
           <div className="description pt-10">
             <p className="text-sm">
-              Explore my professional background, technical expertise, and career achievements. This resume highlights my skills in React, Laravel, and WordPress, along with key projects and experiences that demonstrate my ability to deliver impactful digital solutions for businesses.
+              Explore my professional background, technical expertise, and
+              career achievements. This resume highlights my skills in React,
+              Laravel, and WordPress, along with key projects and experiences
+              that demonstrate my ability to deliver impactful digital solutions
+              for businesses.
             </p>
             <p className="pt-7">
               <Button variant="outline" className="hover:text-black">
@@ -40,50 +45,74 @@ export default function Experience() {
           <div className="padding_class xl:pt-18 lg:pt-18 md:pt-18 space-y-10 flex justify-between w-[100%] xl:space-x-27 lg:space-x-27 md:space-x-18 sm:flex-col md:flex-row">
             <div className="xl:w-[50%] lg:w-[50%] md:w-[100%] sm:w-[100%] text-gray-500  heading grid-cols-2 space-x-1">
               <h2 className="text-2xl">Skills</h2>
-              <div className="skillWrapper pt-6 space-y-7">
-                <div className="skillCard rounded-2xl transition-all">
-                  <h3 className="text-white">Skill title</h3>
-                  <p className="skillDescription text-sm">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Architecto assumenda dignissimos debitis odit corporis
-                    quisquam vero deleniti consectetur numquam ducimus,
-                    praesentium autem a et ipsam repellendus commodi non
-                    doloribus quas?
-                  </p>
-                </div>
+              <div className="">
+                <ScrollArea className="h-[480px] skillWrapper pt-6 space-y-7">
+                  <div className="skillCard rounded-2xl transition-all">
+                    <h3 className="text-white">Skill title</h3>
+                    <p className="skillDescription text-sm">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Architecto assumenda dignissimos debitis odit corporis
+                      quisquam vero deleniti consectetur numquam ducimus,
+                      praesentium autem a et ipsam repellendus commodi non
+                      doloribus quas?
+                    </p>
+                  </div>
 
-                <div className="skillCard rounded-2xl transition-all space-y-5">
-                  <h3 className="text-white">Skill title</h3>
-                  <p className="skillDescription text-sm">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Architecto assumenda dignissimos debitis odit corporis
-                    quisquam vero deleniti consectetur numquam ducimus,
-                    praesentium autem a et ipsam repellendus commodi non
-                    doloribus quas?
-                  </p>
-                </div>
+                   <div className="skillCard rounded-2xl transition-all">
+                    <h3 className="text-white">Skill title</h3>
+                    <p className="skillDescription text-sm">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Architecto assumenda dignissimos debitis odit corporis
+                      quisquam vero deleniti consectetur numquam ducimus,
+                      praesentium autem a et ipsam repellendus commodi non
+                      doloribus quas?
+                    </p>
+                  </div>
 
-                <div className="skillCard rounded-2xl transition-all">
-                  <h3 className="text-white">Skill title</h3>
-                  <p className="skillDescription text-sm">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Architecto assumenda dignissimos debitis odit corporis
-                    quisquam vero deleniti consectetur numquam ducimus,
-                    praesentium autem a et ipsam repellendus commodi non
-                    doloribus quas?
-                  </p>
-                </div>
+                   <div className="skillCard rounded-2xl transition-all">
+                    <h3 className="text-white">Skill title</h3>
+                    <p className="skillDescription text-sm">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Architecto assumenda dignissimos debitis odit corporis
+                      quisquam vero deleniti consectetur numquam ducimus,
+                      praesentium autem a et ipsam repellendus commodi non
+                      doloribus quas?
+                    </p>
+                  </div>
 
-                <div className="skillCard rounded-2xl transition-all">
-                  <h3 className="text-white">Skill title</h3>
-                  <p className="skillDescription text-sm">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Architecto assumenda dignissimos debitis odit corporis
-                    quisquam vero deleniti consectetur numquam ducimus,
-                    praesentium autem a et ipsam repellendus commodi non
-                    doloribus quas?
-                  </p>
-                </div>
+                  <div className="skillCard rounded-2xl transition-all space-y-5">
+                    <h3 className="text-white">Skill title</h3>
+                    <p className="skillDescription text-sm">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Architecto assumenda dignissimos debitis odit corporis
+                      quisquam vero deleniti consectetur numquam ducimus,
+                      praesentium autem a et ipsam repellendus commodi non
+                      doloribus quas?
+                    </p>
+                  </div>
+
+                  <div className="skillCard rounded-2xl transition-all">
+                    <h3 className="text-white">Skill title</h3>
+                    <p className="skillDescription text-sm">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Architecto assumenda dignissimos debitis odit corporis
+                      quisquam vero deleniti consectetur numquam ducimus,
+                      praesentium autem a et ipsam repellendus commodi non
+                      doloribus quas?
+                    </p>
+                  </div>
+
+                  <div className="skillCard rounded-2xl transition-all">
+                    <h3 className="text-white">Skill title</h3>
+                    <p className="skillDescription text-sm">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Architecto assumenda dignissimos debitis odit corporis
+                      quisquam vero deleniti consectetur numquam ducimus,
+                      praesentium autem a et ipsam repellendus commodi non
+                      doloribus quas?
+                    </p>
+                  </div>
+                </ScrollArea>
               </div>
             </div>
             <div className="JourneyClass xl:w-[50%] lg:w-[50%] md:w-[100%] sm:w-[100%]">

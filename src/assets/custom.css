@@ -21,19 +21,30 @@
     align-items: center;
 }
 
-.skillCard{
+.skillWrapper > div > div {
+    display: flex !important;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skillCard {
     position: relative;
     transition: all 0.9s ease-in-out;
+    padding: 10px;
+}
+
+.skillCard h3{
+    margin: 0px;
 }
 
 .skillCard:hover::before{
     content: '';
     position: absolute;
-    top: -15px;
-    bottom: -15px;
-    left: -15px;
-    right: -15px;
-    border-radius: 10px;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    border-radius: 8px;
     background-color: oklch(1 0 0 / 10%);
 }
 

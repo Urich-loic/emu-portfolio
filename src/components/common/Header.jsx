@@ -16,7 +16,11 @@ export default function Header() {
         <NavigationMenuList>
           <NavigationMenuItem>
             <NavigationMenuLink asChild>
-              <NavLink to={"/"}>Engama</NavLink>
+              <NavLink to={"/"}>
+              <div className="w-[60px] h-[60px] border-2 bg-gray-300 border-gray-300 rounded-full">
+                <img src="favicon.png" alt="" />
+              </div>
+              </NavLink>
             </NavigationMenuLink>
           </NavigationMenuItem>
         </NavigationMenuList>
