@@ -12,7 +12,7 @@ export default function Project() {
   return (
     <div
       id="project"
-      className="padding_class experience bg-background text-white xl:py-10 lg:py-10 md:py-10 sm:py-18 px-3"
+      className="padding_class experience bg-background text-white xl:py-5 lg:py-10 md:py-10 sm:py-18 px-3"
     >
       <div className="experienceWrapper flex sm:flex-xol space-x-3  flex-col">
         <div className="flex flex-col text-center pb-10 ">
@@ -42,7 +42,7 @@ export default function Project() {
               <label htmlFor="airplane-mode">Display Mode</label>
             </div>
           </div>
-          <div className="projectWrapper xl:py-27 lg:py-27 md:py-27 sm:py-18 padding_class">
+          <div className="projectWrapper xl:pt-27 lg:pt-27 md:pt-27 sm:py-18 padding_class">
             <div className="projectInnerWrapper xl:flex xl:flex-wrap lg:flex-wrap md:flex-wrap lg:flex md:flex sm:block space-x-5 space-y-5">
               {status ? <ProjectCard /> : <ProjectList />}
             </div>

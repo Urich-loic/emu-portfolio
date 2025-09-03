@@ -8,6 +8,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 
+
 export default function Header() {
   return (
     <div className="fixed left-[50%] transform  translate-x-[-50%] t-10 xl:w-6xl lg:w-6xl md:w-3xl sm:w-2xl z-50 mx-auto">
@@ -47,7 +48,7 @@ export default function Header() {
 
           <NavigationMenuItem>
             <NavigationMenuLink asChild>
-              <Link to="blog" smooth={"true"} duration={500}>
+              <Link to="blogs" smooth={"true"} duration={500}>
                 Blog
               </Link>
             </NavigationMenuLink>

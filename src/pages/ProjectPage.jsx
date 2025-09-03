@@ -17,15 +17,15 @@ export default function ProjectPage() {
               Engama Michel
             </Badge>
             <h2 className="xl:text-5xl py-7 lg:text-3xl md:text-3xl sm:text-3xl text-3xl">
-              All Of My Carrier Journey Achievement
+              Highlighted Projects
             </h2>
           </div>
           <div className="description xl:pt-12 lg:pt-12 md:pt-7 sm:pt-5">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
-              ducimus error. Temporibus maxime veritatis, ab nemo quod provident
-              delectus, tempore explicabo ducimus iure commodi, itaque aliquid.
-              Nisi voluptatem natus corporis.
+              A selection of key projects that showcase my ability to design,
+              develop, and deliver impactful digital solutions. Each project
+              reflects my expertise in full-stack development, problem-solving,
+              and creating value for businesses.
             </p>
             <p className="pt-7">
               <Button variant="outline" className="">

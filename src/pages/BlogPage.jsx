@@ -5,6 +5,9 @@ import { Link, NavLink, Outlet } from "react-router-dom";
 import Background1 from "../../public/images/Background1.png";
 import { Badge } from "@/components/ui/badge";
 import { Switch } from "@/components/ui/switch";
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+import AppSidebar from "@/components/AppSidebar";
+import Layout from "@/components/Layout";
 
 export default function BlogPage() {
   return (
@@ -16,25 +19,25 @@ export default function BlogPage() {
               Engama Michel
             </Badge>
             <h2 className="xl:text-5xl py-7 lg:text-3xl md:text-3xl sm:text-3xl text-3xl">
-             Insights & Expertise
+              Insights & Expertise
             </h2>
           </div>
           <div className="description xl:pt-12 lg:pt-12 md:pt-7 sm:pt-5 xl:w-[70%] sm:w-[100%]">
             <p>
-              Through my blog, I share practical insights, tutorials, and reflections on web development, WordPress, React, and Laravel. Each article is designed to help entrepreneurs, businesses, and fellow developers better understand the digital landscape and leverage technology to achieve measurable results.
+              Through my blog, I share practical insights, tutorials, and
+              reflections on web development, WordPress, React, and Laravel.
+              Each article is designed to help entrepreneurs, businesses, and
+              fellow developers better understand the digital landscape and
+              leverage technology to achieve measurable results.
             </p>
-          
           </div>
         </div>
       </div>
       <div className="experienceWrapper xl:py-27 lg:py-27 md:py-27 sm:py-18 padding_class flex">
-        <div className="sideBar projectWrapper xl:w-[20%] sm:w-[100%]">
-
+        <div className="projectInnerWrapper xl:flex xl:flex-wrap lg:flex-wrap md:flex-wrap lg:flex md:flex sm:block space-x-5 space-y-5 ">
+          <Outlet />
         </div>
-            <div className="projectInnerWrapper xl:flex xl:flex-wrap lg:flex-wrap md:flex-wrap lg:flex md:flex sm:block space-x-5 space-y-5 xl:w-[80%] sm:w-[100%]">
-              <Outlet/>
-            </div>
-            </div>
+      </div>
     </div>
   );
 }

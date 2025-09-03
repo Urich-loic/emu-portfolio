@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "title": "React Content Management",
+    "content": "This post is loaded from JSON."
+  },
+  {
+    "id": 2,
+    "title": "Managing Projects",
+    "content": "This is another post."
+  }
+]

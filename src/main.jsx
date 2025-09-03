@@ -42,11 +42,11 @@ const router = createBrowserRouter([
         element: <ContactPage />,
       },
       {
-        path: "/blog",
+        path: "/blogs",
         element: <BlogPage />,
         children: [
           {
-            path: "/blog",
+            path: "blogs/:blog",
             element: <Blog />,
           },
         ],

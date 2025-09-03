@@ -81,7 +81,6 @@ html {
   --sidebar-ring: oklch(0.556 0 0);
 }
 
-
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -197,6 +196,4 @@ html {
     @apply bg-background text-foreground;
   }
 }
-
-
 
