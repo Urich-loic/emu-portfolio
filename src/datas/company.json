@@ -1,12 +1,48 @@
 [
   {
     "id": 1,
-    "title": "React Content Management",
-    "content": "This post is loaded from JSON."
+    "name": "Nubet",
+    "role": "WordPress integrator",
+    "years": "Prensent",
+    "tag":"Full time"
   },
   {
     "id": 2,
-    "title": "Managing Projects",
-    "content": "This is another post."
+    "name": "ID&CO",
+    "role": "Full stack Developer",
+    "years": "2025 -  prensent",
+    "tag":"Consultant"
+  },
+  {
+    "id": 3,
+    "name": "Ivory Agency",
+    "role": "Développeur Shopify ",
+    "years": "Déc. 2024 – July - 2025",
+    "tag":"(Freelance)",
+    "logo":""
+  },
+  {
+    "id": 4,
+    "name": "Verodav Group",
+    "role": "Développeur Fullstack",
+    "years": "Sept. 2023 – Présent",
+    "tag":"(Freelance)",
+    "logo":""
+  },
+  {
+    "id": 5,
+    "name": "Protaiin",
+    "role": "Développeur WordPress",
+    "years": "Nov. 2021 – Déc. 2024",
+    "tag":"(Freelance)",
+    "logo":""
+  },
+  {
+    "id": 6,
+    "name": "Fondation Maarif de Turquie",
+    "role": "Web Designer",
+    "years": "Oct. 2020 – Déc. 2020 ",
+    "tag":"internship",
+    "logo":""
   }
 ]

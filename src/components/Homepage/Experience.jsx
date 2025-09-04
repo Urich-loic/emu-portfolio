@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/table";
 import Background1 from "../../../public/images/Background1.png";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import Companies from "../../datas/company.json";
 
 export default function Experience() {
   return (
@@ -58,7 +59,7 @@ export default function Experience() {
                     </p>
                   </div>
 
-                   <div className="skillCard rounded-2xl transition-all">
+                  <div className="skillCard rounded-2xl transition-all">
                     <h3 className="text-white">Skill title</h3>
                     <p className="skillDescription text-sm">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -69,7 +70,7 @@ export default function Experience() {
                     </p>
                   </div>
 
-                   <div className="skillCard rounded-2xl transition-all">
+                  <div className="skillCard rounded-2xl transition-all">
                     <h3 className="text-white">Skill title</h3>
                     <p className="skillDescription text-sm">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -121,121 +122,27 @@ export default function Experience() {
                 <div className="group relative flex flex-col items-start">
                   <Table className={"text-gray-500"}>
                     <TableBody className={"space-y-4"}>
-                      <TableRow className="hover:bg-transparent border-none dark:bg-hover:bg-transparent cursor-pointer space-x-2 flex justify-start items-center">
-                        <TableCell className="p-0 h-[50px] w-[50px] flex justify-center items-center">
-                          <span className="border-1 border-zinc-700 rounded-full h-[100%] w-[100%] p-2">
-                            <img
-                              src={Background1}
-                              alt=""
-                              className="rounded-full object-cover w-[100%] h-[100%]"
-                            />
-                          </span>
-                        </TableCell>
-                        <TableCell className={" w-[210px]"}>
-                          <p className="text-white">Company name</p>
-                          <span>role</span>
-                        </TableCell>
+                      {Companies.map((Company, index) => (
+                        <TableRow key={index} className="hover:bg-transparent border-none dark:bg-hover:bg-transparent cursor-pointer space-x-2 flex justify-start items-center">
+                          <TableCell className="p-0 h-[50px] w-[50px] flex justify-center items-center">
+                            <span className="border-1 border-zinc-700 rounded-full h-[100%] w-[100%] p-2">
+                              <img
+                                src={Background1}
+                                alt=""
+                                className="rounded-full object-cover w-[100%] h-[100%]"
+                              />
+                            </span>
+                          </TableCell>
+                          <TableCell className={" w-[210px]"}>
+                            <p className="text-white">{Company.name}</p>
+                            <span>{Company.role}</span>
+                          </TableCell>
 
-                        <TableCell className="text-right">
-                          23/03/2025 - present
-                        </TableCell>
-                      </TableRow>
-
-                      <TableRow className="hover:bg-transparent border-none dark:bg-hover:bg-transparent cursor-pointer space-x-2 flex justify-start items-center">
-                        <TableCell className="p-0 h-[50px] w-[50px] flex justify-center items-center">
-                          <span className="border-1 border-zinc-700 rounded-full h-[100%] w-[100%] p-2">
-                            <img
-                              src={Background1}
-                              alt=""
-                              className="rounded-full object-cover w-[100%] h-[100%]"
-                            />
-                          </span>
-                        </TableCell>
-                        <TableCell className={" w-[210px]"}>
-                          <p className="text-white">Company name</p>
-                          <span>role</span>
-                        </TableCell>
-
-                        <TableCell className="text-right">
-                          23/03/2025 - present
-                        </TableCell>
-                      </TableRow>
-
-                      <TableRow className="hover:bg-transparent border-none dark:bg-hover:bg-transparent cursor-pointer space-x-2 flex justify-start items-center">
-                        <TableCell className="p-0 h-[50px] w-[50px] flex justify-center items-center">
-                          <span className="border-1 border-zinc-700 rounded-full h-[100%] w-[100%] p-2">
-                            <img
-                              src={Background1}
-                              alt=""
-                              className="rounded-full object-cover w-[100%] h-[100%]"
-                            />
-                          </span>
-                        </TableCell>
-                        <TableCell className={" w-[210px]"}>
-                          <p className="text-white">Company name</p>
-                          <span>role</span>
-                        </TableCell>
-
-                        <TableCell className="text-right">
-                          23/03/2025 - present
-                        </TableCell>
-                      </TableRow>
-
-                      <TableRow className="hover:bg-transparent border-none dark:bg-hover:bg-transparent cursor-pointer space-x-2 flex justify-start items-center">
-                        <TableCell className="p-0 h-[50px] w-[50px] flex justify-center items-center">
-                          <span className="border-1 border-zinc-700 rounded-full h-[100%] w-[100%] p-2">
-                            <img
-                              src={Background1}
-                              alt=""
-                              className="rounded-full object-cover w-[100%] h-[100%]"
-                            />
-                          </span>
-                        </TableCell>
-                        <TableCell className={" w-[210px]"}>
-                          <p className="text-white">Company name</p>
-                          <span>role</span>
-                        </TableCell>
-
-                        <TableCell className="text-right">
-                          23/03/2025 - present
-                        </TableCell>
-                      </TableRow>
-
-                      <TableRow className="hover:bg-transparent border-none dark:bg-hover:bg-transparent cursor-pointer space-x-2 flex justify-start items-center">
-                        <TableCell className="p-0 h-[50px] w-[50px] flex justify-center items-center">
-                          <span className="border-1 border-zinc-700 rounded-full h-[100%] w-[100%] p-2">
-                            <img
-                              src={Background1}
-                              alt=""
-                              className="rounded-full object-cover w-[100%] h-[100%]"
-                            />
-                          </span>
-                        </TableCell>
-                        <TableCell className={" w-[210px]"}>
-                          <p className="text-white">Company name</p>
-                          <span>role</span>
-                        </TableCell>
-
-                        <TableCell className="text-right">
-                          23/03/2025 - present
-                        </TableCell>
-                      </TableRow>
-
-                      <TableRow className="hover:bg-transparent border-none dark:bg-hover:bg-transparent cursor-pointer space-x-2 flex justify-start items-center">
-                        <TableCell className="w-[100%]">
-                          <Button
-                            variant="outline"
-                            className="w-[100%] bg-zinc-800 border-none hover:text-black"
-                          >
-                            <Link
-                              to="#resumePDF"
-                              className=" text-white hover:text-black"
-                            >
-                              Download my CV
-                            </Link>
-                          </Button>
-                        </TableCell>
-                      </TableRow>
+                          <TableCell className="text-right">
+                            {Company.years}
+                          </TableCell>
+                        </TableRow>
+                      ))}
                     </TableBody>
                   </Table>
                 </div>
