@@ -1,12 +1,58 @@
 [
   {
     "id": 1,
-    "title": "React Content Management",
-    "content": "This post is loaded from JSON."
+    "title": "WordPress",
+    "content": "Full mastery of WordPress, with advanced expertise in Elementor and Elementor Pro (Theme Builder, dynamic widgets, integration of custom fields with ACF).",
+    "content_2": "Creation of tailor-made websites, both front-end and back-office, with ergonomic, high-performance, and responsive interfaces.",
+    "content_3": "Ability to design 100% custom templates and designs, aligned with UX/UI best practices."
+  },
+  {
+    "id": 1,
+    "title": "Laravel",
+    "content": "I develop secure and scalable back-end applications with Laravel, leveraging its powerful MVC structure, RESTful APIs, and built-in tools to ensure robust performance and maintainability.",
+    "content_2": "",
+    "content_3": ""
+  },
+  {
+    "id": 1,
+    "title": "React.js",
+    "content": "I build fast, responsive, and interactive user interfaces with React.js, focusing on clean component architecture, state management, and seamless API integration to deliver smooth user experiences.",
+    "content_2": "",
+    "content_3": ""
   },
   {
     "id": 2,
-    "title": "Managing Projects",
-    "content": "This is another post."
+    "title": "Web Languages",
+    "content": "Strong command of HTML, CSS, JavaScript, and PHP.",
+    "content_2": "Seamless integration of interactive and dynamic components (jQuery, React.js, Next.js) with special attention to accessibility and performance.",
+    "content_3": "Use of modern frameworks: Tailwind CSS, Bootstrap, Laravel."
+  },
+  {
+    "id": 3,
+    "title": "CMS & E-commerce",
+    "content": "Development on Shopify (Liquid, theme customization, app integration).",
+    "content_2": "WooCommerce integration with WordPress, advanced product management, and optimized conversion funnel.",
+    "content_3": ""
+  },
+  {
+    "id": 4,
+    "title": "SEO & Web Optimization",
+    "content": "In-depth knowledge of technical and semantic SEO (RankMath, Search Console, Google Analytics).",
+    "content_2": "Optimization of web performance (loading times, responsive design, Core Web Vitals).",
+    "content_3": ""
+  },
+  {
+    "id": 5,
+    "title": "UX/UI & Web Design",
+    "content": "Strong background in digital ergonomics and web design.",
+    "content_2": "Creation of mockups and prototypes using Adobe XD, Photoshop, and Illustrator.",
+    "content_3": ""
+  },
+  {
+    "id": 6,
+    "title": "Project Management",
+    "content": "Autonomous in managing web projects: requirements gathering, planning, client follow-up, delivery.",
+    "content_2": "Ability to work in a team or as a freelancer with clear and structured communication.",
+    "content_3": ""
   }
 ]

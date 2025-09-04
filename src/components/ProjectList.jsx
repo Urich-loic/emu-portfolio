@@ -3,41 +3,23 @@ import Background1 from "../../public/images/Background1.png";
 import { Badge } from "@/components/ui/badge";
 import { Switch } from "@/components/ui/switch";
 import { Link } from "react-router-dom";
+import Posts from '../datas/posts.json';
 
 export default function ProjectList() {
-  const posts = [
-    {
-      title: "achivemt title",
-      category: "achievement categorie",
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit adipisci voluptates tempore fugit sunt velit expedita quia voluptatum eaque commodi delectus perspiciatis excepturi, harum reprehenderit doloremque pariatur explicabo distinctio corporis.",
-    },
-    {
-      title: "achivemt title",
-      category: "achievement categorie",
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit adipisci voluptates tempore fugit sunt velit expedita quia voluptatum eaque commodi delectus perspiciatis excepturi, harum reprehenderit doloremque pariatur explicabo distinctio corporis.",
-    },
-    {
-      title: "achivemt title",
-      category: "achievement categorie",
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit adipisci voluptates tempore fugit sunt velit expedita quia voluptatum eaque commodi delectus perspiciatis excepturi, harum reprehenderit doloremque pariatur explicabo distinctio corporis.",
-    }
-  ];
+  const fourPosts = Posts.slice(0, 4);
 
 
   return (
     <>
-      {posts.map((post, index) => (
+      {fourPosts.map((post, index) => (
         <div
           key={index}
-          className={`projectCard w-[100%] flex border-b-1 transition-all border-b-zinc-700 pb-10 overflow-hidden space-x-10`}
+          className={`w-[100%] flex border-b-1 transition-all border-b-zinc-700 pb-7 overflow-hidden space-x-10`}
         >
           <div
-            className={`projectImage w-[55%] transition-all rounded-2xl overflow-hidden`}
+            className={`projectImage w-[20%] transition-all rounded-2xl overflow-hidden`}
           >
-            <img src={Background1} alt=""  className="object-cover w-[100%]"/>
+            <img src={post.img} alt=""  className="object-cover w-[100%]"/>
           </div>
           <div className="textContainer">
             <div
@@ -58,7 +40,7 @@ export default function ProjectList() {
       ))}
       <div className="viewMore w-[100%] pt-10 mt-10">
         <Link to={"/projects"} className="text-gray-400">
-          View all (5)
+          View all ({Posts.length})
         </Link>
       </div>
     </>

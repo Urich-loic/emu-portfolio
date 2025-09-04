@@ -13,8 +13,10 @@ import {
 import Background1 from "../../../public/images/Background1.png";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import Companies from "../../datas/company.json";
+import Skills from "../../datas/skills.json";
 
 export default function Experience() {
+  const firstFourSkills = Skills.slice(0, 4);
   return (
     <div className="about experience text-white xl:py-10 lg:py-10 md:py-10 sm:py-10 xs:py-5 px-3">
       <div className="experienceWrapper flex sm:flex-col space-x-3  flex-col">
@@ -45,75 +47,26 @@ export default function Experience() {
         <div className=" profileDetail flex xl:flex-row lg:flex-row md:flex-col sm:flex-col xs:flex-col gap-10">
           <div className="padding_class xl:pt-18 lg:pt-18 md:pt-18 space-y-10 flex justify-between w-[100%] xl:space-x-27 lg:space-x-27 md:space-x-18 sm:flex-col md:flex-row">
             <div className="xl:w-[50%] lg:w-[50%] md:w-[100%] sm:w-[100%] text-gray-500  heading grid-cols-2 space-x-1">
-              <h2 className="text-2xl">Skills</h2>
+              <h2 className="text-2xl pl-2">Skills</h2>
               <div className="">
-                <ScrollArea className="h-[480px] skillWrapper pt-6 space-y-7">
-                  <div className="skillCard rounded-2xl transition-all">
-                    <h3 className="text-white">Skill title</h3>
-                    <p className="skillDescription text-sm">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Architecto assumenda dignissimos debitis odit corporis
-                      quisquam vero deleniti consectetur numquam ducimus,
-                      praesentium autem a et ipsam repellendus commodi non
-                      doloribus quas?
-                    </p>
+                {firstFourSkills.map((skill, index) => (
+                  <div
+                    key={index}
+                    className="skillCard rounded-2xl transition-all"
+                  >
+                    <h3 className="text-white">{skill.title}</h3>
+                    <ul className="skillDescription text-sm">
+                      <li>- {skill.content}</li>
+                      {skill.content_2 && <li>- {skill.content_2}</li>}
+                      {skill.content_3 && <li>- {skill.content_3}</li>}
+                    </ul>
                   </div>
-
-                  <div className="skillCard rounded-2xl transition-all">
-                    <h3 className="text-white">Skill title</h3>
-                    <p className="skillDescription text-sm">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Architecto assumenda dignissimos debitis odit corporis
-                      quisquam vero deleniti consectetur numquam ducimus,
-                      praesentium autem a et ipsam repellendus commodi non
-                      doloribus quas?
-                    </p>
-                  </div>
-
-                  <div className="skillCard rounded-2xl transition-all">
-                    <h3 className="text-white">Skill title</h3>
-                    <p className="skillDescription text-sm">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Architecto assumenda dignissimos debitis odit corporis
-                      quisquam vero deleniti consectetur numquam ducimus,
-                      praesentium autem a et ipsam repellendus commodi non
-                      doloribus quas?
-                    </p>
-                  </div>
-
-                  <div className="skillCard rounded-2xl transition-all space-y-5">
-                    <h3 className="text-white">Skill title</h3>
-                    <p className="skillDescription text-sm">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Architecto assumenda dignissimos debitis odit corporis
-                      quisquam vero deleniti consectetur numquam ducimus,
-                      praesentium autem a et ipsam repellendus commodi non
-                      doloribus quas?
-                    </p>
-                  </div>
-
-                  <div className="skillCard rounded-2xl transition-all">
-                    <h3 className="text-white">Skill title</h3>
-                    <p className="skillDescription text-sm">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Architecto assumenda dignissimos debitis odit corporis
-                      quisquam vero deleniti consectetur numquam ducimus,
-                      praesentium autem a et ipsam repellendus commodi non
-                      doloribus quas?
-                    </p>
-                  </div>
-
-                  <div className="skillCard rounded-2xl transition-all">
-                    <h3 className="text-white">Skill title</h3>
-                    <p className="skillDescription text-sm">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Architecto assumenda dignissimos debitis odit corporis
-                      quisquam vero deleniti consectetur numquam ducimus,
-                      praesentium autem a et ipsam repellendus commodi non
-                      doloribus quas?
-                    </p>
-                  </div>
-                </ScrollArea>
+                ))}
+                <div className="viewMore w-[100%] pt-5">
+                  <Link to={"/skills"} className="text-gray-400">
+                    View all ({Skills.length})
+                  </Link>
+                </div>
               </div>
             </div>
             <div className="JourneyClass xl:w-[50%] lg:w-[50%] md:w-[100%] sm:w-[100%]">
@@ -123,7 +76,10 @@ export default function Experience() {
                   <Table className={"text-gray-500"}>
                     <TableBody className={"space-y-4"}>
                       {Companies.map((Company, index) => (
-                        <TableRow key={index} className="hover:bg-transparent border-none dark:bg-hover:bg-transparent cursor-pointer space-x-2 flex justify-start items-center">
+                        <TableRow
+                          key={index}
+                          className="hover:bg-transparent border-none dark:bg-hover:bg-transparent cursor-pointer space-x-2 flex justify-start items-center"
+                        >
                           <TableCell className="p-0 h-[50px] w-[50px] flex justify-center items-center">
                             <span className="border-1 border-zinc-700 rounded-full h-[100%] w-[100%] p-2">
                               <img
