@@ -3,7 +3,6 @@ import App from "./App.jsx";
 import "./assets/custom.css";
 import "./App.css";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
-import { Home } from "lucide-react";
 import BlogPage from "./pages/BlogPage.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
