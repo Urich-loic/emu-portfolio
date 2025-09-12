@@ -1,14 +1,14 @@
 [
   {
     "id": 1,
-    "img":"/public/images/sphere1-min.jpg",
+    "img":"/images/sphere1-min.jpg",
     "title": "3 Sphere",
     "description": "This post is loaded from JSON.",
     "category":"Showcase"
   },
   {
     "id": 2,
-    "img":"/public/images/fenebel6.jpg",
+    "img":"/images/fenebel6.jpg",
     "title": "Fenebel",
     "description": "This is another post.",
      "category":"E-commerce"
@@ -16,7 +16,7 @@
   ,
   {
     "id": 3,
-    "img":"/public/images/paillons1-min.webp",
+    "img":"/images/paillons1-min.webp",
     "title": "Papillons Magique",
     "description": "This is another post.",
      "category":"Showcase"
@@ -24,14 +24,14 @@
   ,
   {
     "id": 4,
-    "img":"/public/images/studio-1.png",
+    "img":"/images/studio-1.png",
     "title": "Studio Lucie gamache",
     "description": "This is another post.",
      "category":"Showcase"
   },
   {
     "id": 5,
-    "img":"/public/images/yulpronos5-min.jpg",
+    "img":"/images/yulpronos5-min.jpg",
     "title": "Yullprono",
     "description": "This is another post.",
      "category":"E-commerce"
