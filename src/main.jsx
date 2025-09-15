@@ -10,6 +10,7 @@ import ProjectPage from "./pages/ProjectPage.jsx";
 import SideProject from "./pages/SideProject.jsx";
 import CarrierProject from "./pages/CarrierProject.jsx";
 import Blog from "./components/Blog/Blog.jsx";
+import { Analytics } from "@vercel/analytics/next";
 
 const router = createBrowserRouter([
   {
